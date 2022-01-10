@@ -14,6 +14,7 @@ public:
         return 2 * (length + breadth);
     }
 };
+//MAIN FUNCTION
 int main()
 {
     Rectangle r1; // r1 variable name Object created in Stack Memory
