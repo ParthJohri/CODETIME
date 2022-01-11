@@ -1,2 +1,2 @@
 # CODETIME
-This repository contains the resources and my source files for learning C++, Data Structures.
+This repository contains all my notes from Development to Data Structures and Algorithms.
