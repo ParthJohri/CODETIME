@@ -2,6 +2,8 @@
 
 Java DataStructures - https://leetcode.com/tag/array/discuss/1170715/Java-or-Data-Structure-Mostly-used-Syntax
 
+Time Complexity - https://stackoverflow.com/questions/7294634/what-are-the-time-complexities-of-various-data-structures
+
 Binary Search for beginners - https://leetcode.com/tag/binary-search/discuss/691825/Binary-Search-for-Beginners-Problems-or-Patterns-or-Sample-solutions
 
 DP for beginners - https://leetcode.com/discuss/general-discussion/662866/dp-for-beginners-problems-patterns-sample-solutions
