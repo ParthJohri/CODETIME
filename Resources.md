@@ -8,4 +8,6 @@ Graph for beginners - https://leetcode.com/discuss/general-discussion/655708/gra
 
 Sliding window for beginners - https://leetcode.com/discuss/general-discussion/657507/sliding-window-for-beginners-problems-template-sample-solutions/562721
 
+Summary of Sliding Window Patterns for Subarray / Substring - https://leetcode.com/tag/array/discuss/1122776/Summary-of-Sliding-Window-Patterns-for-Subarray-Substring
+
 Greedy for beginners - https://leetcode.com/discuss/general-discussion/669996/greedy-for-beginners-problems-sample-solutions
