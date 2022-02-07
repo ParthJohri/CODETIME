@@ -70,28 +70,28 @@ The reason why vector<int> can be as key in set because vector override operator
 But if you use unordered_set<vector<int>> you have to create a hash function for vector<int>, because vector does't have a hash function, so you have to define one like:
 
 
-  struct VectorHash {
-    size_t operator()(const std::vector<int>& v) const {
-        std::hash<int> hasher;
-        size_t seed = 0;
-        for (int i : v) {
-            seed ^= hasher(i) + 0x9e3779b9 + (seed<<6) + (seed>>2);
-        }
-          return seed;
-      }
-  };
+     struct VectorHash {
+       size_t operator()(const std::vector<int>& v) const {
+           std::hash<int> hasher;
+           size_t seed = 0;
+           for (int i : v) {
+               seed ^= hasher(i) + 0x9e3779b9 + (seed<<6) + (seed>>2);
+           }
+             return seed;
+         }
+     };
 
-  vector<vector<int>> two(){
-    //unordered_set<vector<int>> s; // error vector<int> doesn't  have hash function
-    unordered_set<vector<int>, VectorHash> s;
-    s.insert({1, 2});
-    s.insert({1, 3});
-    s.insert({1, 2});
+    vector<vector<int>> two(){
+      //unordered_set<vector<int>> s; // error vector<int> doesn't  have hash function
+      unordered_set<vector<int>, VectorHash> s;
+      s.insert({1, 2});
+      s.insert({1, 3});
+      s.insert({1, 2});
 
     for(const auto& vec:s)
         cout<<vec<<endl;
     // 1 2
     // 1 3
-}
+    }
 you can see that in some case unordered_set is more complicated.
 
