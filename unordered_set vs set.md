@@ -54,15 +54,15 @@ enter image description here
 Note:(in some case set is more convenient) for example using vector as key
 
 
-  set<vector<int>> s;
-  s.insert({1, 2});
-  s.insert({1, 3});
-  s.insert({1, 2});
+    set<vector<int>> s;
+    s.insert({1, 2});
+    s.insert({1, 3});
+    s.insert({1, 2});
 
-for(const auto& vec:s)
-    cout<<vec<<endl;   // I have override << for vector
-// 1 2
-// 1 3 
+    for(const auto& vec:s)
+        cout<<vec<<endl;   // I have override << for vector
+    // 1 2
+    // 1 3 
   
 The reason why vector<int> can be as key in set because vector override operator<.
                                                                                    
